@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "weeklymeals",
+  "compatibility_date": "2026-10-19",
+  // Only the public/ folder is served. Everything else in the repo
+  // (README, config, git history) stays private.
+  "assets": {
+    "directory": "./public"
+  },
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true
+  }
+}

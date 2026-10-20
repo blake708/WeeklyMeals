@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dinner</title>
 <meta name="theme-color" content="#10201A">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -24,6 +24,8 @@
 
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;height:100%}
+/* no pinch or double-tap zoom; scrolling still works */
+html,body{touch-action:pan-x pan-y}
 body{background:var(--paper);color:var(--marsh);font-family:var(--serif);
      -webkit-text-size-adjust:100%;overscroll-behavior:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
@@ -537,6 +539,10 @@ $("nextStep").addEventListener("click",()=>{
   const m=WEEK.meals[cookMeal];
   cookStep===m.steps.length-1 ? exitCook() : goStep(cookStep+1);
 });
+
+/* block pinch-zoom on iPhone/iPad Safari, which ignores user-scalable=no */
+["gesturestart","gesturechange","gestureend"].forEach(ev=>
+  document.addEventListener(ev,e=>e.preventDefault(),{passive:false}));
 
 /* swipe between steps */
 let sx=0,sy=0;

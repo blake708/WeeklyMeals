@@ -16,5 +16,6 @@ The family kitchen site, served by a Cloudflare Worker (static assets). Every pu
 
 ## Cloudflare settings
 
+- Live at https://meals.middletonhome.io (also weeklymeals.blake-520.workers.dev)
 - Deploy command: `npx wrangler deploy` (reads `wrangler.jsonc`)
 - Only `public/` is served. Never move site files outside it, or they will not deploy; never put anything private inside it.

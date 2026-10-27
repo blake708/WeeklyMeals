@@ -8,8 +8,8 @@
 const WEEK = {
   id:"2026-10-26", label:"Week of October 26",
   range:"Dinner, Tue, Thu & Fri", servings:"3 servings",
-  avg:{carbs:40,protein:32,fat:28},
-  balanceNote:"The target is 40 / 30 / 30, and this week lands near 40 / 32 / 28. Two lean chicken-breast nights push protein a little high and fat a little low, and Friday's salmon brings fat back up. Every night has a legume: black beans Tuesday, edamame Thursday, lentils Friday. These numbers are dinners only; breakfasts are not included. Wednesday is off for the Myrtle Beach drive.",
+  avg:{carbs:40,protein:31,fat:29},
+  balanceNote:"The target is 40 / 30 / 30, and this week lands near 40 / 31 / 29. Two lean chicken-breast nights push protein a little high and fat a little low, and Friday's salmon and tzatziki bring fat back up. Every night has a legume: black beans Tuesday, edamame Thursday, lentils Friday. These numbers are dinners only; breakfasts are not included. Wednesday is off for the Myrtle Beach drive.",
   meals:[
     {day:"Tue",dayFull:"Tuesday",title:"Chili-Lime Chicken Bowls",sub:"Cilantro-lime brown rice, black beans, charred corn, pico",
      method:"Grill",time:"40 min",kcal:680,g:{carbs:72,protein:55,fat:19},pct:{carbs:42,protein:33,fat:25},
@@ -55,9 +55,9 @@ const WEEK = {
      ],
      note:"Bottled stir-fry sauce saves the most time but is high in sodium, so a third of a cup is plenty. Taste before adding more. Day-old rice is drier and stir-fries without turning mushy."},
 
-    {day:"Fri",dayFull:"Friday",title:"Grilled Lemon-Herb Salmon",sub:"Warm lentil salad, dill yogurt, whole-wheat pita",
-     method:"Grill",time:"35 min",kcal:715,g:{carbs:62,protein:51,fat:29},pct:{carbs:35,protein:29,fat:36},
-     ingredients:["1 lb skin-on salmon fillet (fish counter)","1/2 cup French green lentils, dry","3 cups water","1 bay leaf","1 tsp olive oil (salmon)","1 tsp Cavender's Greek seasoning","2 lemons","2 tsp olive oil (dressing)","1/2 English cucumber, diced","1/2 cup roasted red pepper strips, chopped","1/4 red onion, finely diced","1/2 cup fresh parsley, chopped","1/2 cup plain nonfat Greek yogurt","2 tbsp fresh dill (or 2 tsp dried)","1 small garlic clove, grated","1 oz feta, crumbled","3 whole-wheat pitas","Pinch of kosher salt"],
+    {day:"Fri",dayFull:"Friday",title:"Grilled Lemon-Herb Salmon",sub:"Warm lentil salad, tzatziki, whole-wheat pita",
+     method:"Grill",time:"35 min",kcal:725,g:{carbs:62,protein:48,fat:31},pct:{carbs:35,protein:27,fat:38},
+     ingredients:["1 lb skin-on salmon fillet (fish counter)","1/2 cup French green lentils, dry","3 cups water","1 bay leaf","1 tsp olive oil (salmon)","1 tsp Cavender's Greek seasoning","2 lemons","2 tsp olive oil (dressing)","1/2 English cucumber, diced","1/2 cup roasted red pepper strips, chopped","1/4 red onion, finely diced","1/2 cup fresh parsley, chopped","1/2 cup Cedar's cucumber garlic dill tzatziki","1 oz feta, crumbled","3 whole-wheat pitas","Pinch of kosher salt"],
      steps:[
        {t:"Simmer the lentils",b:"Rinse the lentils. Cover them with the water, add the bay leaf, and simmer gently for twenty to twenty-five minutes, until tender but still holding their shape. Salt them only at the end, because salting early can keep them firm.",sec:1380,
         ing:["1/2 cup French green lentils","3 cups water","1 bay leaf"]},
@@ -65,16 +65,16 @@ const WEEK = {
         ing:[]},
        {t:"Season the salmon",b:"Pat the salmon dry. Rub it with the oil, the Greek seasoning, and the zest of one lemon. Cavender's already has salt in it, so do not add more.",
         ing:["1 lb salmon fillet","1 tsp olive oil","1 tsp Cavender's Greek seasoning","Zest of 1 lemon"]},
-       {t:"Make the sauce and dressing",b:"Stir the yogurt with the dill, the grated garlic, a squeeze of lemon, and a pinch of salt. In a second bowl, whisk the dressing oil with the juice of one lemon. Dice the cucumber, roasted peppers, red onion, and parsley.",
-        ing:["1/2 cup plain nonfat Greek yogurt","2 tbsp fresh dill (or 2 tsp dried)","1 small garlic clove, grated","2 tsp olive oil","Juice of 1 lemon","1/2 English cucumber","1/2 cup roasted red peppers","1/4 red onion","1/2 cup parsley"]},
+       {t:"Make the dressing",b:"Whisk the dressing oil with the juice of one lemon. Dice the cucumber, roasted peppers, red onion, and parsley. The tzatziki comes ready from the tub, so there is no sauce to make.",
+        ing:["2 tsp olive oil","Juice of 1 lemon","1/2 English cucumber","1/2 cup roasted red peppers","1/4 red onion","1/2 cup parsley"]},
        {t:"Grill the salmon",b:"Grill the salmon skin side down with the lid closed for six to eight minutes, until the center reaches about 125°F for medium. There is no need to flip it. Warm the pitas on the grill for the last minute.",sec:420,
         ing:["3 whole-wheat pitas"]},
        {t:"Dress the lentils",b:"Drain the lentils, remove the bay leaf, and add a pinch of salt. Toss them while still warm with the dressing and the diced vegetables, because warm lentils soak up the dressing.",
         ing:["Pinch of salt"]},
-       {t:"Plate",b:"Spoon the lentil salad onto plates, set the salmon on top, and add a spoonful of dill yogurt. Scatter the feta lightly over the salad, and serve with the warm pitas and the remaining lemon in wedges.",
-        ing:["1 oz feta, crumbled"]}
+       {t:"Plate",b:"Spoon the lentil salad onto plates, set the salmon on top, and add a spoonful of tzatziki. Scatter the feta lightly over the salad, and serve with the warm pitas and the remaining lemon in wedges.",
+        ing:["1/2 cup tzatziki","1 oz feta, crumbled"]}
      ],
-     note:"This is the fatty-fish night, so it runs high in fat by design, mostly omega-3s. A tub of store-bought tzatziki can replace the dill yogurt if you are short on time."},
+     note:"This is the fatty-fish night, so it runs high in fat by design, mostly omega-3s. Store-bought tzatziki replaces the homemade dill yogurt and adds a couple of grams of fat per serving."},
 
     {day:"Bkfst",dayFull:"Breakfast",title:"Spinach-Feta Egg Bites",sub:"Make ahead, 12 bites, reheat in 30 seconds",
      method:"Muffin tin",time:"30 min",kcal:130,g:{carbs:3,protein:13,fat:7},pct:{carbs:9,protein:41,fat:50},
@@ -113,14 +113,14 @@ const WEEK = {
     "Tuesday after dinner, about thirty minutes: mix the six pumpkin oat jars, and bake the egg bites at 375°F. Both are ready for grab-and-go breakfast Wednesday morning before the drive.",
     "Once the egg bites cool: keep six in the fridge and freeze six for next week.",
     "Breakfast plan: overnight oats Wednesday through Saturday, egg bites as needed alongside them.",
-    "Fish counter: buy the salmon Thursday or Friday so it is fresh for Friday night. Pick up fresh dill there if they have it; otherwise use dried."
+    "Fish counter: buy the salmon Thursday or Friday so it is fresh for Friday night."
   ],
   shopping:[
     ["Produce",["1 avocado","3 limes","2 lemons","1 bunch cilantro","1 bunch Italian parsley","1 head garlic","1 bag broccoli florets, 12 oz","1 bag sugar snap peas, 8 oz","1 red bell pepper","1 bunch green onions","1 English cucumber","1 red onion","Publix fresh pico, 16 oz"]],
-    ["Fish counter",["1 lb skin-on salmon fillet — buy Thursday or Friday","Fresh dill, if available (otherwise dried)"]],
+    ["Fish counter",["1 lb skin-on salmon fillet — buy Thursday or Friday"]],
     ["Meat",["Perdue Harvestland chicken breasts, 2.25 lb (half Tuesday, half Thursday)"]],
     ["Pantry",["1 can black beans","1 can pure pumpkin, 15 oz","1 jar roasted red pepper strips","Whole-wheat pita, 6 count","Chopped pecans","Gourmet Garden ginger paste","House of Tsang Classic Stir Fry Sauce","Less-sodium soy sauce","Toasted sesame oil","Old El Paso less-sodium taco seasoning","Cavender's Greek seasoning"]],
     ["Frozen",["Fire-roasted corn, 12 oz","Shelled edamame, 12 oz"]],
-    ["Dairy",["Plain nonfat Greek yogurt, 32 oz","fairlife 2% milk, 52 oz"]]
+    ["Dairy",["Plain nonfat Greek yogurt, 32 oz","Cedar's cucumber garlic dill tzatziki, 12 oz","fairlife 2% milk, 52 oz"]]
   ]
 };
